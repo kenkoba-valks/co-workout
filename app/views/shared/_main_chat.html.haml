@@ -1,0 +1,36 @@
+.main_chat
+  .main_chat__trainer
+    .main_chat__trainer-name
+      AYA
+    .main_chat__trainer-welcomme_sentence
+      一緒に頑張りましょう！
+  .main_chat__contents
+    .main_chat__contents-first
+      .main_chat__contents-first-item
+        .main_chat__contents-first-item-username
+          YUSUKE
+        .main_chat__contents-first-item-date
+          2020/02/24 10:00:00
+      .main_chat__contents-first-content
+        %p.mainchat__contents-content-message
+          メッセージはまだありません
+  .main_chat__form
+    %form.new-message
+      .input-box
+        %input.input-text{:placeholder => "type a message", :type => "text"}/
+        %label(for="image-icon")
+          = icon('fas', 'paperclip',class:'file-icon')
+          = icon('fas', 'image',class:'image-icon')
+        %input{type:"file",style:"display:none",id:"image-icon"}
+        %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
+
+
+
+
+    -# %form.new-message
+    -#   .input-box
+    -#     %input.input-text{:placeholder => "type a message", :type => "text"}/
+    -#     %label.text(for="upload-image")
+    -#       = icon('fas', 'image')
+    -#     %input{type: "file",style:"display:none",id:"upload-image"}
+    -#     %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/

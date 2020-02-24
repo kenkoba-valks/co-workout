@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.side_bar{
+  height: 100vh;
+  width: 300px;
+  &__upper{
+    height: 100px;
+    background-color: #DC143C;
+    color: white;
+    line-height: 100px;
+    &-contents{
+      display: flex;
+      justify-content: space-between;
+      &-username{
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__lower{
+    height: calc(100vh - 100px);
+    background-color: #FFEBCD;
+    &-trainer-contents{
+      padding: 20px 0 0 20px;
+      &-trainer_name{
+        font-weight: bold;
+      }
+      &-latest_message{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.main_chat{
+  height: 100vh;
+  width: calc(100% - 300px);
+  &__trainer{
+    height: 100px;
+    background-color: #FFEBCD;
+    line-height: 50px;
+    padding-left: 20px;
+    &-name{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    &-welcomme_sentence{
+      font-size: 15px;
+      color: gray;
+    }
+  }
+  &__contents{
+    height: calc(100vh - 200px);
+    background-color: #B0E0E6;
+    &-first{
+      padding: 25px 0 25px 25px;
+      &-item{
+        display: flex;
+        &-username{
+          font-weight: bold;
+        }
+        &-date{
+          margin-left: 10px;
+          font-size: 12px;
+          color: gray;
+        }
+      }
+    }
+  }
+  &__form{
+    height: 100px;
+    background-color: #DC143C;
+  }
+}
+
+.icon{
+  margin-right: 10px;
+}
+.input-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-text{
+  height: 50px;
+  width: 950px;
+  margin: auto;
+  margin-top: 25px;
+}
+.submit-btn{
+  height: 50px;
+  width: 100px;
+  border: 1px solid white;
+  margin: auto;
+  margin-top: 25px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.file-icon{
+  position: absolute;
+  top: 43px;
+  right: 240px;
+  cursor: pointer;
+}
+
+.image-icon{
+  position: absolute;
+  top: 43px;
+  right: 215px;
+  cursor: pointer;
+}
+
+.new-message{
+  position: relative;
+}
