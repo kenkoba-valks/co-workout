@@ -1,0 +1,12 @@
+.header
+  choose your trainer
+-# .trainer
+- @trainers.each do |trainer|
+  .trainer__box
+    .trainer__box-image
+      = trainer.image
+    .trainer__box-information
+      .trainer__box-information-name
+        = trainer.name
+      .trainer__box-information-comment
+        = trainer.comment

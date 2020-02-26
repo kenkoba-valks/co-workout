@@ -1,0 +1,60 @@
+.header{
+  height: 75px;
+  width: 100%;
+  background-color: #FF0461;
+  color: white;
+  font-size: 40px;
+  line-height: 75px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  z-index: 1;
+}
+
+.trainer{
+  height: calc(100vh - 75px);
+  width: 100%;
+  background-color: #FFEBCD;
+  overflow: scroll;
+  padding-top: 75px;
+  // position: relative;
+    &__box{
+      height: 200px;
+      width: 100%;
+      display: flex;
+      padding-top: 125px;
+      margin-bottom: 30px;
+      // position: absolute;
+      // top: 50px;
+      &-image{
+        height: 200px;
+        width: 200px;
+        margin-left: 110px;
+        border: solid 3px;
+        color: #FF0461;
+      }
+      &-information{
+        height: 200px;
+        width: 1000px;
+        background-color:#D3D3D3;
+        &-name{
+          height: 50px;
+          width: 800px;
+          margin-left: 40px;
+          margin-top: 30px;
+          line-height: 50px;
+          font-weight: bold;
+          font-size: 25px;
+        }
+        &-comment{
+          height: 50px;
+          width: 800px;
+          background-color: rgba(255, 220, 0, 0.5);
+          margin-left: 40px;
+          margin-top: 10px;
+          line-height: 50px;
+          font-size: 20px;
+        }
+      }
+    }
+  }

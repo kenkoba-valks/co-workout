@@ -1,0 +1,37 @@
+.fv-section {
+  height: 100vh;
+  background-image: url(workout.jpeg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fv-text {
+  font-size: 40px;
+  margin-bottom: 60px;
+  color:#FF0461;
+  background-color: rgba(255,255,255,0.7);
+  font-weight: bold;
+}
+
+.cta-btn {
+  display: inline-block;
+  width: 240px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffa201;
+  margin-top: 40px;
+  border-radius: 27px;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  box-shadow: 0 0 10px #ffa201;
+}
