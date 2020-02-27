@@ -47,6 +47,7 @@
     background-color: #FFEBCD;
     line-height: 50px;
     padding-left: 20px;
+    position: relative;
     &-name{
       font-weight: bold;
       font-size: 20px;
@@ -120,4 +121,22 @@
 
 .new-message{
   position: relative;
+}
+
+.main_chat__trainer-location-btn{
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  height: 40px;
+  width: 90px;
+  background-color: white;
+  line-height: 40px;
+  margin: auto;
+  text-align: center;
+  border: solid 2px;
+}
+
+.location-btn{
+  text-decoration: none;
+  color: black;
 }
