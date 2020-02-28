@@ -81,9 +81,14 @@
   }
 }
 
-.icon{
-  margin-right: 10px;
+.edit-icon{
+
 }
+
+.signout-icon{
+  margin-right: 20px;
+}
+
 .input-box{
   display: flex;
   justify-content: space-between;
@@ -139,4 +144,8 @@
 .location-btn{
   text-decoration: none;
   color: black;
+}
+
+a{
+  color: white;
 }
