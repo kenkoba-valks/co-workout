@@ -11,8 +11,10 @@
         = link_to destroy_user_session_path, method: :delete do
           = icon('fas', 'sign-out-alt',class: 'signout-icon')
   .side_bar__lower
-    .side_bar__lower-trainer-contents
-      .side_bar__lower-trainer-contents-trainer_name
-        AYA
-      .side_bar__lower-trainer-contents-latest_message
-        メッセージはまだありません
+    - current_user.trainers.each do |trainer|
+      .side_bar__lower-trainer-contents
+        = link_to trainer_messages_path(trainer) do
+          .side_bar__lower-trainer-contents-trainer_name
+            = trainer.name
+          .side_bar__lower-trainer-contents-latest_message
+            = trainer.show_last_message

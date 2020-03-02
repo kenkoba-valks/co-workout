@@ -1,0 +1,24 @@
+.main_chat__contents-first
+  .main_chat__contents-first-item
+    .main_chat__contents-first-item-username
+      = message.user.name
+    .main_chat__contents-first-item-date
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .main_chat__contents-first-content
+  - if message.content.present?
+    %p.mainchat__contents-content-message
+      = message.content
+  = image_tag message.image.url, class: 'mainchat__contents-first-content__image' if message.image.present?
+
+-# .message{data: {message: {id: message.id}}}
+-#   .mainchat__contents-first{data: {message: {id: message.id}}}
+-#     .mainchat__contents-first-item
+-#       .mainchat__contents-first-item-username
+-#         = message.user.name
+-#       .mainchat__contents-first-item-date
+-#         = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+-#     .mainchat__contents-first-content
+-#       - if message.content.present?
+-#         %p.mainchat__contents-first-message-content
+-#           = message.content
+-#       = image_tag message.image.url, class: 'mainchat__contents-first-content__image' if message.image.present?
