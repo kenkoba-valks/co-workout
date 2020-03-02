@@ -1,5 +1,8 @@
 .header
-  pick up the location
+  .header__left
+  Pick up the location
+  .header__right
+  = link_to "Back", :back, class: 'header-btn'
 %input#address{:type => "textbox"}/
 %input{:onclick => "codeAddress()", :type => "button", :value => "検索"}/
 #map

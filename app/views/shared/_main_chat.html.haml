@@ -1,38 +1,18 @@
 .main_chat
   .main_chat__trainer
     .main_chat__trainer-name
-      AYA
+      = @trainer.name
     .main_chat__trainer-location-btn
-      = link_to "候補地参照", location_index_path, class: 'location-btn'
+      = link_to "MAP", location_index_path, class: 'location-btn'
     .main_chat__trainer-welcomme_sentence
-      一緒に頑張りましょう！
+      = @trainer.comment
   .main_chat__contents
-    .main_chat__contents-first
-      .main_chat__contents-first-item
-        .main_chat__contents-first-item-username
-          YUSUKE
-        .main_chat__contents-first-item-date
-          2020/02/24 10:00:00
-      .main_chat__contents-first-content
-        %p.mainchat__contents-content-message
-          メッセージはまだありません
+    = render partial: 'message', collection: @messages
   .main_chat__form
-    %form.new-message
-      .input-box
-        %input.input-text{:placeholder => "type a message", :type => "text"}/
-        %label(for="image-icon")
-          = icon('fas', 'paperclip',class:'file-icon')
-          = icon('fas', 'image',class:'image-icon')
-        %input{type:"file",style:"display:none",id:"image-icon"}
-        %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
-
-
-
-
-    -# %form.new-message
-    -#   .input-box
-    -#     %input.input-text{:placeholder => "type a message", :type => "text"}/
-    -#     %label.text(for="upload-image")
-    -#       = icon('fas', 'image')
-    -#     %input{type: "file",style:"display:none",id:"upload-image"}
-    -#     %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
+    = form_for [@trainer, @message] do |f|
+      = f.text_field :content, class: 'input-text', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'image-icon' do
+          = icon('fas', 'image', class: 'image-icon')
+          = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'

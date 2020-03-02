@@ -5,5 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :name, presence: true
-  
+
+  has_many :trainer_users
+  has_many :trainers, through: :trainer_users
+  has_many :messages
 end

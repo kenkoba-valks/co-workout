@@ -1,6 +1,6 @@
 .fv-section {
   height: 100vh;
-  background-image: url(workout.jpeg);
+  background-image: url(first-view.jpeg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,8 +14,10 @@
   font-size: 40px;
   margin-bottom: 60px;
   color:#FF0461;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.3);
   font-weight: bold;
+  font-family: Times New Roman;
+
 }
 
 .cta-btn {
@@ -27,9 +29,10 @@
   color: #fff;
   text-decoration: none;
   background-color: #ffa201;
-  margin-top: 40px;
+  margin-top: 90px;
   border-radius: 27px;
   font-weight: bold;
+  font-family: Times New Roman;
 }
 
 .cta-btn:hover {
