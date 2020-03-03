@@ -8,5 +8,4 @@ class User < ApplicationRecord
 
   has_many :trainer_users
   has_many :trainers, through: :trainer_users
-  has_many :messages
 end
