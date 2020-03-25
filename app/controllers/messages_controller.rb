@@ -1,17 +1,17 @@
 class MessagesController < ApplicationController
-  before_action :set_trainer
+  before_action :set_coach
 
   def index
     @message = Message.new
-    @messages = @trainer.messages.includes(:user)
+    @messages = @coach.messages.includes(:user)
   end
 
   def create
-    @message = @trainer.messages.new(message_params)
+    @message = @coach.messages.new(message_params)
     if @message.save
-      redirect_to trainer_messages_path(@trainer), notice: 'メッセージが送信されました'
+      redirect_to trainer_messages_path(@coach), notice: 'メッセージが送信されました'
     else
-      @messages = @trainer.messages.includes(:user)
+      @messages = @coach.messages.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください。'
       render :index
     end
@@ -23,7 +23,7 @@ class MessagesController < ApplicationController
     params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
   end
 
-  def set_trainer
-    @trainer = Trainer.find(params[:trainer_id])
+  def set_coach
+    @coach = Coach.find(params[:trainer_id])
   end
 end

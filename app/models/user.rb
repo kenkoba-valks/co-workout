@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
 
-  has_many :trainer_users
-  has_many :trainers, through: :trainer_users
+  has_many :coach_users
+  has_many :coaches, through: :coach_users
   has_many :messages
 end

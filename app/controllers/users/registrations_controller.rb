@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Coaches::RegistrationsController < Devise::RegistrationsController
+class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
@@ -16,12 +16,15 @@ class Coaches::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/edit
   def edit
-    super
   end
 
   # PUT /resource
   def update
-    super
+    if current_user.update(user_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   # DELETE /resource
