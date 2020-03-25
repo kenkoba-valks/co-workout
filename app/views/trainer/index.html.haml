@@ -4,7 +4,6 @@
 - @trainers.each do |trainer|
   .trainer__box
     .trainer__box-image
-      = trainer.image
     .trainer__box-information
       .trainer__box-information-name
         = link_to trainer.name, trainer_messages_path(trainer), class: 'trainer__box-information-name'
