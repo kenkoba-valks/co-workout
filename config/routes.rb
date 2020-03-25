@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :coaches, controllers: {
+  sessions:      'coaches/sessions',
+  passwords:     'coaches/passwords',
+  registrations: 'coaches/registrations'
+}
+  devise_for :users, controllers: {
+    sessions:      'users/sessions',
+    passwords:     'users/passwords',
+    registrations: 'users/registrations'
+  }
   root "first_view#index"
   resources :first_view, only: [:index]
   resources :location, only: [:index]
