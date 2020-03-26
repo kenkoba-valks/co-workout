@@ -1,15 +1,16 @@
 .main_chat
   .main_chat__trainer
     .main_chat__trainer-name
-      = @trainer.name
+      = @coach.name
     .main_chat__trainer-location-btn
       = link_to "MAP", location_index_path, class: 'location-btn'
     .main_chat__trainer-welcomme_sentence
-      = @trainer.comment
+      -# = @trainer.comment
+      ここには「コメント」が入ります
   .main_chat__contents
     = render partial: 'message', collection: @messages
   .main_chat__form
-    = form_for [@trainer, @message] do |f|
+    = form_for [@coach, @message] do |f|
       = f.text_field :content, class: 'input-text', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'image-icon' do

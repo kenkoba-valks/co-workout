@@ -3,7 +3,7 @@
     .account-page__inner--left.account-page__header
       %h2 LOG IN for COACH
       %h5 登録しているユーザーでログイン
-      = render "devise/shared/links"
+      = render "coaches/shared/links2"
     .account-page__inner--right.user-form
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .field

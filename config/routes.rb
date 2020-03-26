@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   root "first_view#index"
   resources :first_view, only: [:index]
   resources :location, only: [:index]
-  resources :users, only: [:edit,:update]
-  resources :trainer, only: [:index] do
+  resources :users, only: [:index,:edit,:update]
+  resources :coaches, only: [:index] do
     resources :messages, only: [:index, :create]
   end
 end

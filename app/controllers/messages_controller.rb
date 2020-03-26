@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
   def create
     @message = @coach.messages.new(message_params)
     if @message.save
-      redirect_to trainer_messages_path(@coach), notice: 'メッセージが送信されました'
+      redirect_to coach_messages_path(@coach), notice: 'メッセージが送信されました'
     else
       @messages = @coach.messages.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください。'
@@ -24,6 +24,6 @@ class MessagesController < ApplicationController
   end
 
   def set_coach
-    @coach = Coach.find(params[:trainer_id])
+    @coach = Coach.find(params[:coach_id])
   end
 end

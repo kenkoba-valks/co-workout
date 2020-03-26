@@ -66,7 +66,7 @@
   }
   &__contents{
     height: calc(100vh - 200px);
-    background-color: #B0E0E6;
+    background-color: white;
     overflow: scroll;
     &-first{
       padding: 25px 0 25px 25px;
@@ -98,7 +98,7 @@
 
 .input-text{
   height: 50px;
-  width: 950px;
+  width: 1100px;
   margin: auto;
   margin-top: 25px;
   margin-left: 35px;

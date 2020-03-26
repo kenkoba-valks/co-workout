@@ -1,0 +1,11 @@
+.header
+  find your trainer
+.trainer
+  - @coaches.each do |coach|
+    .trainer__box
+      .trainer__box-image
+      .trainer__box-information
+        .trainer__box-information-name
+          = link_to coach.name, coach_messages_path(coach), class: 'trainer__box-information-name'
+        .trainer__box-information-comment
+          ここには各トレーナーの「ひとこと」が入ります。

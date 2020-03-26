@@ -3,9 +3,9 @@
     .account-page__inner--left.account-page__header
       %h2 Create Account for Users
       %h5 ユーザーアカウントの新規作成
-      = render "devise/shared/links"
+      = render "users/shared/links2"
     .account-page__inner--right.user-form
-      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      = form_for(@user, url: registration_path(resource_name)) do |f|
         = devise_error_messages!
         .field
           .field-label
