@@ -12,8 +12,11 @@ Rails.application.routes.draw do
   root "first_view#index"
   resources :first_view, only: [:index]
   resources :location, only: [:index]
-  resources :users, only: [:index,:edit,:update]
+  resources :users, only: [:index,:edit,:update] 
   resources :coaches, only: [:index] do
+    collection do
+      get 'search'
+    end
     resources :messages, only: [:index, :create]
   end
 end

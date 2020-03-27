@@ -9,6 +9,11 @@ class Coach < ApplicationRecord
          has_many :messages
          validates :name, presence: true, uniqueness: true
 
+         def self.search(search)
+          return Coach.all unless search
+          Coach.where('name LIKE(?)', "%#{search}%")
+        end
+
         #  def show_last_message
         #   if (last_message = messages.last).present?
         #     if last_message.content?
@@ -21,3 +26,24 @@ class Coach < ApplicationRecord
         #   end
         # end
 end
+
+# <%= form_with(url: tweets_searches_path, local: true, method: :get, class: "search-form") do |form| %>
+#   <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+#   <%= form.submit "検索", class: "search-btn" %>
+# <% end %>
+# <div class="contents row">
+#   <% @tweets.each do |tweet| %>
+#     <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
+#   <% end %>
+# </div>
+
+# <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
+#   <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+#   <%= form.submit "検索", class: "search-btn" %>
+# <% end %>
+# <div class="contents row">
+#   <% @tweets.each do |tweet| %>
+#     <%= render partial: "tweet", locals: { tweet: tweet } %>
+#   <% end %>
+#   <%= paginate(@tweets) %>
+# </div>

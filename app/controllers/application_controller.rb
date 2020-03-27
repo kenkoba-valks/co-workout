@@ -9,12 +9,13 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
   end
 
-  def after_sign_in_path_for(user)
-    '/coaches'
+  def after_sign_in_path_for(resource)
+    case resource
+    when User
+      coaches_path
+    when Coach
+      users_path
+    end
   end
-
-  # def after_sign_in_path_for(coach)
-  #   '/users'
-  # end
 
 end
