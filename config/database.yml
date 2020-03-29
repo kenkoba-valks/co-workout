@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: co-workout_production
-  username: co-workout
-  password: <%= ENV['CO-WORKOUT_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
