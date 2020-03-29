@@ -1,0 +1,14 @@
+.header
+  find your trainer
+  = form_with(url: search_coaches_path, local: true, method: :get, class: "search-form") do |f|
+    = f.text_field :name, placeholder: "トレーナーを検索する", class: "search-input"
+    = f.submit "検索", class: "search-btn"
+.trainer
+  - @coaches.each do |coach|
+    .trainer__box
+      .trainer__box-image
+      .trainer__box-information
+        .trainer__box-information-name
+          = link_to coach.name, coach_messages_path(coach), class: 'trainer__box-information-name'
+        .trainer__box-information-comment
+          ここには各トレーナーの「ひとこと」が入ります。

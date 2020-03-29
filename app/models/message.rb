@@ -1,5 +1,5 @@
 class Message < ApplicationRecord
-  belongs_to :trainer
+  belongs_to :coach
   belongs_to :user
 
   validates :content, presence: true, unless: :image?

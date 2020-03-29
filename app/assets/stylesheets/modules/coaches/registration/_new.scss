@@ -1,0 +1,112 @@
+.container{
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  &__header{
+    display: flex;
+    background-color: #f1f1f1;
+    width: 500px;
+    margin: auto;
+    height: 100px;
+    line-height: 110px;
+    &__logo{
+      margin: auto;
+      text-align: center;
+    }
+    &__progress{
+      margin: auto;
+      font-size: 5px;
+      display: flex;
+    }
+  }
+  &__main{
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    height: calc(100% - 300px);
+    padding-bottom: 100px;;
+    &__registration{
+      height: 50px;
+      background-color: white;
+      line-height: 50px;
+      width: 500px;
+      margin: auto;
+      border-bottom: 1px gray;
+      font-weight: bold;
+    }
+    &__form-frame{
+      margin: auto;
+      
+    }
+  }
+  &__footer{
+    height: 200px;
+    background-color: #f1f1f1;
+    margin: auto;
+    width: 500px;
+    line-height: 200px;
+  }
+}
+
+.form-group{
+  background-color: white;
+  width: 500px;
+  margin: auto;
+  &__require{
+    font-size: 5px;
+    background-color: red;
+    color: white;
+  }
+  &__input{
+    display: block;
+    margin: auto;
+    &--hqlf{
+      align-items: left;
+    }
+  }
+  &__info{
+    font-size: 5px;
+    height: 70px;
+    line-height: 70px;
+    &__extra{
+      font-size: 5px;
+      height: 30px;
+    }
+  }
+  &__text--center{
+    font-size: 5px;
+  }
+}
+
+
+
+
+li{
+  margin-left: 5px;
+}
+
+label{
+  font-size: 5px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.btn{
+  background-color: #66FFFF;
+  color: black;
+  margin-top: 50px;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  &:hover{
+    color: gray;
+    background-color: rgb(162, 255, 255);
+  }
+}
+
+.container__header__progress__red{
+  color: red;
+}
+#user_birth_1i,#user_birth_2i,#user_birth_3i{
+  cursor: pointer;
+}

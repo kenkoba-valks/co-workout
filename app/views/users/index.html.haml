@@ -1,0 +1,13 @@
+.header
+  find your customer
+  .logout
+    = link_to "ログアウト",destroy_coach_session_path, method: :delete
+.trainer
+  - @users.each do |user|
+    .trainer__box
+      .trainer__box-image
+      .trainer__box-information
+        .trainer__box-information-name
+          = user.name
+        .trainer__box-information-comment
+          ここには各ユーザーの「要望」が入ります。

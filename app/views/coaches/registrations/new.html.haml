@@ -1,0 +1,73 @@
+.container
+  .container__header
+    %h1.container__header__logo
+    %ul.container__header__progress
+      %li.container__header__progress__red
+        トレーナー情報
+      %li.container__header__progress__text
+        住所入力
+  .container__main
+    .container__main__registration
+      登録情報入力
+    .container__main__form-frame
+      = form_with(model: @coach, url: coach_registration_path, method: :post, local:true) do |f|
+        = render "coaches/shared/error_messages", resource: @coach
+        .form-group
+          = f.label :ニックネーム
+          %span.form-group__require 必須
+          = f.text_field :name, {placeholder: "例) バルク太郎",class:'form-group__input'}
+        .form-group
+          = f.label :メールアドレス
+          %span.form-group__require 必須
+          = f.email_field :email, {autofocus: true, autocomplete: "email", placeholder: "PC・携帯どちらでも可",class:'form-group__input'}
+        .form-group
+          = f.label :パスワード
+          %span.form-group__require 必須
+          = f.password_field :password,{autocomplete: "new-password",placeholder: "7文字以上の半角英数字",class:'form-group__input',id:"password"}
+        .form-group
+          = f.label :確認用パスワード
+          %span.form-group__require 必須
+          = f.password_field :password_confirmation,{autocomplete: "new-password",placeholder: "7文字以上の半角英数字",class:'form-group__input',id:"password"}
+          %p.form-group__info ※ 英字と数字の両方を含めて設定してください
+        .form-group
+          = f.label :年齢
+          %span.form-group__require 任意
+          = f.text_field :age, {placeholder: "現在34歳の場合→34と入力してください",class:'form-group__input'}
+        .form-group
+          = f.label :コメント
+          %span.form-group__require 任意
+          = f.text_field :request, {placeholder: "例) 一緒に頑張りましょう！！",class:'form-group__input'}
+        -# .item-num-0#image-box__container
+        -#   = f.fields_for :coach do |i|
+        -#     = i.label :image, class: 'image-field__label' do
+        -#       = icon('fas', 'camera', class: 'camera-icon img-file')
+        -#       = i.file_field :image, type: 'file', name: "item[images_attributes][][image]", id:"img-file", class: "img-file"
+        -#       %br/
+        .form-group
+          %label.form-group-text-title 本人確認
+          %p.form-group__info 
+            安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。
+          %p.form-group__info__extra
+            他のお客さまに公開されることはありません。
+        .form-group
+          = f.label :"お名前(全角)"
+          %span.form-group__require 必須
+        = f.text_field :family_name, {placeholder:"例) 山田",class:'form-group__input--half'}
+        = f.text_field :first_name, {placeholder:"例) 彩",class:'form-group__input--half'}
+        .form-group
+          = f.label :"お名前カナ(全角)"
+          %span.form-group__require 必須
+        = f.text_field :family_name_kana, {placeholder:"例) ヤマダ",class:'form-group__input--half'}
+        = f.text_field :first_name_kana, {placeholder:"例) アヤ",class:'form-group__input--half'}
+        .form-group
+          = f.label "生年月日"
+          %span.form-group__require 必須
+          %br
+          != sprintf(f.date_select(:birth_day,with_css_classes:'birthday-select-wrap', prompt:"--",use_month_numbers:true,class: 'signup-main__birthday' , start_year:Time.now.year, end_year:1900, date_separator:'%s'),'年','月')+'日'
+        .form-group
+          %p.form-group__info ※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。
+          %p.form-group__text--center
+            「次へ進む」のボタンを押すことにより、
+            = link_to "利用規約", "#" , target:"_blank"
+            に同意したものとみなします
+          = f.submit '次へ進む', class: "btn-default btn"

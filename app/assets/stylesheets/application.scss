@@ -1,8 +1,15 @@
 @import "reset";
-@import "modules/user";
 @import "modules/first_view";
-@import "modules/trainer";
+@import "modules/coach";
 @import "modules/messages";
+@import "modules/users/registration/new";
+@import "modules/users/registration/create_address";
+@import "modules/users/registration/new_address";
+@import "modules/users/session/new";
+@import "modules/coaches/registration/new";
+@import "modules/coaches/registration/create_address";
+@import "modules/coaches/registration/new_address";
+@import "modules/coaches/session/new";
 @import "modules/location";
 @import "font-awesome-sprockets";
 @import "font-awesome";

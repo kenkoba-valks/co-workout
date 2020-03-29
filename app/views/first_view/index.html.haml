@@ -1,4 +1,5 @@
 .fv-section
   %p.fv-text Welcome to Co-Workout
-  %a 
-  = link_to "Let's Start",new_user_session_path, class: 'cta-btn'
+  .start-btn
+    = link_to "Are you user?",new_user_session_path, class: 'user-btn'
+    = link_to "Are you coach?",new_coach_session_path, class: 'coach-btn'

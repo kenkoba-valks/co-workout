@@ -6,7 +6,14 @@ class User < ApplicationRecord
 
   validates :name, presence: true
 
-  has_many :trainer_users
-  has_many :trainers, through: :trainer_users
+  has_many :coach_users
+  has_many :coaches, through: :coach_users
   has_many :messages
+  has_one :address
+
+  def self.search(search)
+    return User.all unless search
+    User.where('text LIKE(?)', "%#{search}%")
+  end
+
 end

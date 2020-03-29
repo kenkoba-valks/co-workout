@@ -1,0 +1,37 @@
+.container
+  .container__header
+    %h1.container__header__logo
+    %ul.container__header__progress
+      %li.container__header__progress__text
+        会員情報
+      %li.container__header__progress__red
+        住所入力
+  .container__location
+    .container__location__top
+      住所情報登録
+    .container__location__form
+      = form_with(model: @address, url: coach_addresses_path, method: :post, local:true) do |f|
+        = render "coaches/shared/error_messages", resource: @address
+        .form-group
+          = f.label :郵便番号 
+          %span.form-group__require 必須
+          = f.text_field :postal_code, {class:'form-group__input'}
+        .form-group
+          = f.label :都道府県 
+          %span.form-group__require 必須
+          = f.text_field :prefecture, {class:'form-group__input'}
+        .form-group
+          = f.label :市町村
+          %span.form-group__require 必須
+          = f.text_field :city, {class:'form-group__input'}
+        .form-group
+          = f.label :建物名
+          %span.form-group__require
+          = f.text_field :building_name, {class:'form-group__input'}
+        .form__group
+          = f.label :電話番号
+          %span.form-group__require 必須
+          = f.text_field :phone_number, {class:'form-group__input'}
+        .form_submit
+          = f.submit '登録する', class: "location-btn"
+  .container__footer

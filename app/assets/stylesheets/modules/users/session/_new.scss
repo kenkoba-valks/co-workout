@@ -1,0 +1,94 @@
+.login{
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  &__header{
+    margin: auto;
+    background-color: #f1f1f1;
+    height: 100px;
+    width: 500px;
+    line-height: 120px;
+  }
+  &__no-account{
+    height: 190px;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    border-bottom: grey;
+  }
+  &__box{
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    &__field{
+      margin: auto;
+      #user_remember_me{
+        cursor: pointer;
+      }
+    }
+    &__actions{
+      height: 100px;
+      margin-top: 30px;
+    }
+    &__forget-passward{
+
+    }
+  }
+  &__footer{
+    
+  }
+}
+
+.enter-registration{
+  align-items: center;
+  text-decoration: none;
+  padding:50px 0 0px;
+  
+  &__contents{
+    width: 200px;
+    height: 50px;
+    margin: 5px auto;
+    &__content{
+      width: 200px;
+      height: 50px;
+      &--btn{
+        background-color: #66FFFF;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        // text-decoration: none;
+        // color: white;
+        // margin-top: 20px;
+        border: 1px solid rgba(128, 128, 128,0.3);
+        &:hover{
+          color:gray;
+          background-color:#aeffff;
+        }
+      }
+    }
+  }
+}  
+
+.new-account{
+  text-decoration: none;
+  color: black;
+}
+
+.forget-btn{
+  text-decoration: none;
+  color: blue;
+}
+
+.login-btn{
+  height: 50px;
+  width: 190px;
+  background-color:#66ffff;
+  cursor: pointer;
+  transition: 0.1s;
+  &:hover{
+    color:gray;
+    background-color:#aeffff;
+  }
+}
