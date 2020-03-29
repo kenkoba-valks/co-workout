@@ -9,6 +9,7 @@ class User < ApplicationRecord
   has_many :coach_users
   has_many :coaches, through: :coach_users
   has_many :messages
+  has_one :address
 
   def self.search(search)
     return User.all unless search

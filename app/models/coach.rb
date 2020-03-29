@@ -7,6 +7,7 @@ class Coach < ApplicationRecord
          has_many :coach_users
          has_many :users, through: :coach_users
          has_many :messages
+         has_one :address
          validates :name, presence: true, uniqueness: true
 
          def self.search(search)

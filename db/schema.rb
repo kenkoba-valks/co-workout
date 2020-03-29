@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_28_124857) do
+ActiveRecord::Schema.define(version: 2020_03_29_034124) do
+
+  create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "coach_id"
+    t.integer "postal_code", null: false
+    t.string "prefecture", null: false
+    t.string "city", null: false
+    t.string "building_name"
+    t.string "phone_number", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "coach_users", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "coach_id"
@@ -30,9 +42,14 @@ ActiveRecord::Schema.define(version: 2020_03_28_124857) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name", null: false
-    t.string "image", null: false
+    t.string "image"
     t.integer "age", null: false
     t.text "request", null: false
+    t.string "family_name", null: false
+    t.string "first_name", null: false
+    t.string "family_name_kana", null: false
+    t.string "first_name_kana", null: false
+    t.date "birth_day", null: false
     t.index ["name"], name: "index_coaches_on_name"
   end
 
@@ -59,6 +76,11 @@ ActiveRecord::Schema.define(version: 2020_03_28_124857) do
     t.string "image"
     t.integer "age"
     t.text "request"
+    t.date "birth_day", null: false
+    t.string "family_name", null: false
+    t.string "first_name", null: false
+    t.string "family_name_kana", null: false
+    t.string "first_name_kana", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["name"], name: "index_users_on_name", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
