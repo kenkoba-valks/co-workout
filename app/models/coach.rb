@@ -15,17 +15,17 @@ class Coach < ApplicationRecord
           Coach.where('name LIKE(?)', "%#{search}%")
         end
 
-        #  def show_last_message
-        #   if (last_message = messages.last).present?
-        #     if last_message.content?
-        #       last_message.content
-        #     else
-        #       '画像が投稿されています'
-        #     end
-        #   else
-        #     'まだメッセージはありません。'
-        #   end
-        # end
+         def show_last_message
+          if (last_message = messages.last).present?
+            if last_message.content?
+              last_message.content
+            else
+              '画像が投稿されています'
+            end
+          else
+            'まだメッセージはありません。'
+          end
+        end
 end
 
 # <%= form_with(url: tweets_searches_path, local: true, method: :get, class: "search-form") do |form| %>

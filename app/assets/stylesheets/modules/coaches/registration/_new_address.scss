@@ -13,8 +13,8 @@
 }
 
 .location-btn{
-  background-color: #66FFFF;
-  color: black;
+  background-color: #FF0461;
+  color: white;
   margin-top: 50px;
   height: 40px;
   width: 100px;
@@ -23,7 +23,7 @@
   right: 200px;
   cursor: pointer;
   &:hover{
-    color: gray;
-    background-color: rgb(162, 255, 255);
+    color: white;
+    background-color: rgb(255, 162, 205);
   }
 }

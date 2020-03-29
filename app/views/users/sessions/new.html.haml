@@ -1,8 +1,6 @@
 .login
   .login__header
-    =link_to "Co-Workout", root_path
-  -# .login__no-account
-  -#   = render "users/shared/links"
+    =link_to "Co-Workout for User", root_path,class: 'header-sentence'
   .login__box
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .login__box__field
@@ -22,4 +20,4 @@
       .login__box__sign-up
         アカウントをお持ちでない方はこちら
       .login__box__forget-passward
-        = render "users/shared/links2"
+        =link_to "新規登録", new_user_registration_path, class: 'registratin-btn'

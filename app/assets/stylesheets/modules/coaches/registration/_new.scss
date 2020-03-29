@@ -92,15 +92,15 @@ label{
 }
 
 .btn{
-  background-color: #66FFFF;
-  color: black;
+  background-color: #FF0461;
+  color: white;
   margin-top: 50px;
-  height: 40px;
+  height: 50px;
   width: 100px;
   cursor: pointer;
   &:hover{
-    color: gray;
-    background-color: rgb(162, 255, 255);
+    color: white;
+    background-color: rgb(255, 162, 205);
   }
 }
 
@@ -109,4 +109,17 @@ label{
 }
 #user_birth_1i,#user_birth_2i,#user_birth_3i{
   cursor: pointer;
+}
+
+.signup-btn{
+  height: 50px;
+}
+
+.registratin-btn{
+  background-color: #FF0461;
+  height: 25px;
+  padding: 18px 65px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 30px;
 }

@@ -11,4 +11,4 @@
         .trainer__box-information-name
           = link_to coach.name, coach_messages_path(coach), class: 'trainer__box-information-name'
         .trainer__box-information-comment
-          ここには各トレーナーの「ひとこと」が入ります。
+          =coach.request
