@@ -3,12 +3,14 @@
   width: 100%;
   height: 100vh;
   text-align: center;
+  // color: #FF0461;
   &__header{
     margin: auto;
     background-color: #f1f1f1;
     height: 100px;
     width: 500px;
     line-height: 120px;
+    color: #FF0461;
   }
   &__no-account{
     height: 190px;
@@ -19,7 +21,7 @@
   }
   &__box{
     background-color: white;
-    height: 300px;
+    height: 500px;
     width: 500px;
     margin: auto;
     &__field{
@@ -32,8 +34,12 @@
       height: 100px;
       margin-top: 30px;
     }
+    &__sign-up{
+      height: 30px;
+    }
     &__forget-passward{
-
+      height: 200px;
+      background-color: white;
     }
   }
   &__footer{
@@ -41,35 +47,32 @@
   }
 }
 
-.enter-registration{
-  align-items: center;
-  text-decoration: none;
-  padding:50px 0 0px;
+// .enter-registration{
+//   align-items: center;
+//   text-decoration: none;
+//   padding:50px 0 0px;
   
-  &__contents{
-    width: 200px;
-    height: 50px;
-    margin: 5px auto;
-    &__content{
-      width: 200px;
-      height: 50px;
-      &--btn{
-        background-color: #66FFFF;
-        width: 200px;
-        height: 50px;
-        line-height: 50px;
-        // text-decoration: none;
-        // color: white;
-        // margin-top: 20px;
-        border: 1px solid rgba(128, 128, 128,0.3);
-        &:hover{
-          color:gray;
-          background-color:#aeffff;
-        }
-      }
-    }
-  }
-}  
+//   &__contents{
+//     width: 200px;
+//     height: 50px;
+//     margin: 5px auto;
+//     &__content{
+//       width: 200px;
+//       height: 50px;
+//       &--btn{
+//         background-color: #FF0461;
+//         width: 200px;
+//         height: 50px;
+//         line-height: 50px;
+//         border: 1px solid rgba(128, 128, 128,0.3);
+//         &:hover{
+//           color:gray;
+//           background-color:#aeffff;
+//         }
+//       }
+//     }
+//   }
+// }  
 
 .new-account{
   text-decoration: none;
@@ -79,16 +82,30 @@
 .forget-btn{
   text-decoration: none;
   color: blue;
+  height: 300px;
 }
 
 .login-btn{
   height: 50px;
   width: 190px;
-  background-color:#66ffff;
+  background-color:#FF0461;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.1s;
   &:hover{
     color:gray;
-    background-color:#aeffff;
+    background-color:#FF0461;
   }
+}
+
+.header-sentence{
+  color:#FF0461;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn{
+  background-color: #FF0461;
 }

@@ -3,10 +3,9 @@
     .main_chat__trainer-name
       = @coach.name
     .main_chat__trainer-location-btn
-      = link_to "MAP", location_index_path, class: 'location-btn'
+      = link_to "MAP",location_index_path, class: 'address-btn'
     .main_chat__trainer-welcomme_sentence
-      -# = @trainer.comment
-      ここには「コメント」が入ります
+      = @coach.request
   .main_chat__contents
     = render partial: 'message', collection: @messages
   .main_chat__form
