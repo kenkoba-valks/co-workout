@@ -7,7 +7,7 @@ Users and coaches can login and sign up to this app through each designated scre
 ・ユーザーはコーチを、コーチはユーザーを検索し、選択することができます。<br>
 Users can search their own coaches and choose them while coaches also can find their customers on this app.<br> 
 ・ユーザーとコーチは選択したアカウントをチャットを開始することができます。<br>
-They can talk with users or coaches who they chose on this app.<br> 
+Users and coaches can talk with their trainers or customers who they chose on this app.<br> 
 # background（porposes and reasons for creating this app）
 ・趣味でフィットネスに熱中しており、世間、特にビジネスマンにより浸透すれば良いと考えているため。<br>
 I'm into fitness as my hobby and I think that it's siginificant for people,especialy business people to exercise and manage their meals for their healthy body and mental.<br>
@@ -27,8 +27,8 @@ Installed Google Map API and uesrs and coaches can easily use map from their cha
 Create user's and coach's "My Page".<br>
 ・コーチの評価機能（五段階程度を予定）を実装<br>
 Add the fanction to evaluate coaches.(I will make like stars of 5 phases )<br>
-・ransakを用いた条件検索（年齢、資格の有無、評価等）の実装<br>
-Add the fanction to search coaches under paticular conditions with "ransack"(conditions mean "age","qualification","evaluation"etc)<br>
+・ransakを用いた条件検索（年齢、性別、資格の有無、評価等）の実装<br>
+Add the fanction to search coaches under paticular conditions with "ransack"(conditions mean "age","sex","qualification","evaluation"etc)<br>
 # environment
 ・ruby 2.5.1
 # DB
