@@ -1,34 +1,34 @@
 # co-workout
-co-workoutはユーザーとフィットネストレーナーの出会いの場を効率良く提供することを目的としたマッチングアプリです。
-This app enables people to hire their own personal coach of fitness easily and coaches to find their customers efficiently.
+co-workoutはユーザーとフィットネストレーナーの出会いの場を効率良く提供することを目的としたマッチングアプリです。<br>
+This app enables people to hire their own personal coach of fitness easily and coaches to find their customers efficiently.<br>
 # overview
-・ユーザーとコーチ（以下トレーナーと同義として扱う）はそれぞれアカウントを持ち、専用の画面から新規登録/ログインを行います。
-Users and coaches can login and sign up to this app through each designated screen.
-・ユーザーはコーチを、コーチはユーザーを検索し、選択することができます。
-Users can search their own coaches and choose them while coaches also can find their customers on this app.
-・ユーザーとコーチは選択したアカウントをチャットを開始することができます。
-They can talk with users or coaches who they chose on this app.
+・ユーザーとコーチ（以下トレーナーと同義として扱う）はそれぞれアカウントを持ち、専用の画面から新規登録/ログインを行います。<br>
+Users and coaches can login and sign up to this app through each designated screen.<br>
+・ユーザーはコーチを、コーチはユーザーを検索し、選択することができます。<br>
+Users can search their own coaches and choose them while coaches also can find their customers on this app.<br> 
+・ユーザーとコーチは選択したアカウントをチャットを開始することができます。<br>
+They can talk with users or coaches who they chose on this app.<br> 
 # background（porposes and reasons for creating this app）
-・趣味でフィットネスに熱中しており、世間、特にビジネスマンにより浸透すれば良いと考えているため。
+・趣味でフィットネスに熱中しており、世間、特にビジネスマンにより浸透すれば良いと考えているため。<br>
 I'm into fitness as my hobby and I think that it's siginificant for people,especialy business people to exercise and manage their meal for their healthy body and mental.
-・周囲の人々から自分一人で運動や食事管理を続けることが難しいのでパーソナルトレーナーを利用することも考えたが、料金も高く、またどこで依頼すればいいかわからないという声を頻繁に聞いたため。
-Some of my friends said to me that it's too dificult for them to make it habit to exercise and manage their meals on their own.So they once thought they wanted to hire their coaches,but it was too expensive and they didn't know where they shold find their coaches.
-・パーソナルトレーナーとして活動を行う知人達から顧客獲得における費用・手間の負担が大きく苦労しているという話を聞いたため。 
-Some of my friends who work as personal trainers said that they are in trouble with burdens of expense to continue their tasks and tremendous time to find their customers.
+・周囲の人々から自分一人で運動や食事管理を続けることが難しいのでパーソナルトレーナーを利用することも考えたが、料金も高く、またどこで依頼すればいいかわからないという声を頻繁に聞いたため。<br>
+Some of my friends said to me that it's too dificult for them to make it habit to exercise and manage their meals on their own.So they once thought they wanted to hire their coaches,but it was too expensive and they didn't know where they shold find their coaches.<br>
+・パーソナルトレーナーとして活動を行う知人達から顧客獲得における費用・手間の負担が大きく苦労しているという話を聞いたため。<br> 
+Some of my friends who work as personal trainers said that they are in trouble with burdens of expense to continue their tasks and tremendous time to find their customers.<br>
 # points
-・ログイン画面をuserとcoachの二種類を用意したこと。
-I create screens of login for both of users and coaches.
-・それぞれがuserとcoachを検索し、選択できるようにしたこと。
-This enable users and coaches to search and choose their business partners.
-・GoogleMapのAPIを用いてチャット画面から手軽に地図を開けるようにしたこと。
-I installed Google Map API and they can use map from their chats easily.
+・ログイン画面をuserとcoachの二種類を用意したこと。<br>
+I create screens of login for both of users and coaches.<br>
+・それぞれがuserとcoachを検索し、選択できるようにしたこと。<br>
+This enable users and coaches to search and choose their business partners.<br>
+・GoogleMapのAPIを用いてチャット画面から手軽に地図を開けるようにしたこと。<br>
+I installed Google Map API and they can use map from their chats easily.<br>
 # future fanction
-・ユーザーとコーチのマイページを実装・充実させる
-Create user's and coach's "My Page".
-・コーチの評価機能（五段階程度を予定）を実装
-Add the fanction to evaluate coaches.(I will make like stars of 5 phases )
-・ransakを用いた条件検索（年齢、資格の有無、評価等）の実装
-Add the fanction to search coaches under paticular conditions with "ransack"(conditions mean "age","qualification","evaluation"etc)
+・ユーザーとコーチのマイページを実装・充実させる<br>
+Create user's and coach's "My Page".<br>
+・コーチの評価機能（五段階程度を予定）を実装<br>
+Add the fanction to evaluate coaches.(I will make like stars of 5 phases )<br>
+・ransakを用いた条件検索（年齢、資格の有無、評価等）の実装<br>
+Add the fanction to search coaches under paticular conditions with "ransack"(conditions mean "age","qualification","evaluation"etc)<br>
 # environment
 ・ruby 2.5.1
 # DB
