@@ -3,18 +3,18 @@ co-workoutはユーザーとフィットネストレーナーの出会いの場�
 This app enables people to hire their own personal coach of fitness easily and coaches to find their customers efficiently.<br>
 ![first-view-complete](https://user-images.githubusercontent.com/60640640/77883279-c04e2480-729d-11ea-9f6e-d427f8775334.jpg)<br>
 # overview
-・ユーザーとコーチ（以下トレーナーと同義として扱う）はそれぞれアカウントを持ち、専用の画面から新規登録/ログインを行います。<br>
-Users and coaches can login and sign up to this app through each designated screen.<br>
+①ユーザーとコーチ（以下トレーナーと同義として扱う）はそれぞれアカウントを持ち、専用の画面から新規登録/ログインを行います。<br>
+  Users and coaches can login and sign up to this app through each designated screen.<br>
 <img width="897" alt="login_for_user" src="https://user-images.githubusercontent.com/60640640/77883459-233fbb80-729e-11ea-898b-46fa4e64215e.png"><br>
 <img width="772" alt="login_for_coach" src="https://user-images.githubusercontent.com/60640640/77883455-2175f800-729e-11ea-85c8-c3a9938f5a51.png"><br>
-・ユーザーはコーチを、コーチはユーザーを検索し、選択することができます。<br>
-Users can search their own coaches and choose them while coaches also can find their customers on this app.<br> 
+②ユーザーはコーチを、コーチはユーザーを検索し、選択することができます。<br>
+  Users can search their own coaches and choose them while coaches also can find their customers on this app.<br> 
 <img width="1431" alt="choose-coach" src="https://user-images.githubusercontent.com/60640640/77883574-5d10c200-729e-11ea-87bb-a3f4891b555f.png"><br>
-・ユーザーとコーチは選択したアカウントとチャットを開始することができます。<br>
-Users and coaches can talk with their trainers or customers who they chose on this app.<br> 
+③ユーザーとコーチは選択したアカウントとチャットを開始することができます。<br>
+  Users and coaches can talk with their trainers or customers who they chose on this app.<br> 
 <img width="1431" alt="message" src="https://user-images.githubusercontent.com/60640640/77883604-6e59ce80-729e-11ea-8ed2-160303264264.png"><br>
 # background（porposes and reasons for creating this app）
-・趣味でフィットネスに熱中しており、世間、特にビジネスマンにより浸透すれば良いと考えているため。<br>
+・趣味でフィットネスに熱中しており世の中、特にビジネスマンにより浸透すれば良いと考えているため。<br>
 I'm into fitness as my hobby and I think that it's siginificant for people,especialy business people to exercise and manage their meals for their healthy body and mental.<br>
 ・周囲の人々から自分一人で運動や食事管理を続けることが難しいのでパーソナルトレーナーを利用することも考えたが、料金も高く、またどこで依頼すればいいかわからないという声を頻繁に聞いたため。<br>
 Some of my friends said to me that it's too dificult for them to make it habit to exercise and manage their meals on their own.So they once thought they wanted to hire their coaches,but it was too expensive and they didn't know where they should find their coaches.<br>
