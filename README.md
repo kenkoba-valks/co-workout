@@ -10,7 +10,7 @@ Users and coaches can login and sign up to this app through each designated scre
 ・ユーザーはコーチを、コーチはユーザーを検索し、選択することができます。<br>
 Users can search their own coaches and choose them while coaches also can find their customers on this app.<br> 
 <img width="1431" alt="choose-coach" src="https://user-images.githubusercontent.com/60640640/77883574-5d10c200-729e-11ea-87bb-a3f4891b555f.png"><br>
-・ユーザーとコーチは選択したアカウントをチャットを開始することができます。<br>
+・ユーザーとコーチは選択したアカウントとチャットを開始することができます。<br>
 Users and coaches can talk with their trainers or customers who they chose on this app.<br> 
 <img width="1431" alt="message" src="https://user-images.githubusercontent.com/60640640/77883604-6e59ce80-729e-11ea-8ed2-160303264264.png"><br>
 # background（porposes and reasons for creating this app）
