@@ -37,7 +37,7 @@ Installed Google Map API and uesrs and coaches can easily use map from their cha
 Create user's and coach's "My Page".<br>
 ・コーチの評価機能（五段階程度を予定）を実装<br>
 Add the fanction to evaluate coaches.(I will make like stars of 5 phases )<br>
-・ransakを用いた条件検索（年齢、性別、資格の有無、評価等）の実装<br>
+・ransakを用いたコーチの条件検索（年齢、性別、資格の有無、評価等）の実装<br>
 Add the fanction to search coaches under paticular conditions with "ransack"(conditions mean "age","sex","qualification","evaluation"etc)<br>
 # environment
 ・ruby 2.5.1
