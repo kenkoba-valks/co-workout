@@ -10,18 +10,18 @@ Users can search their own coaches and choose them while coaches also can find t
 They can talk with users or coaches who they chose on this app.<br> 
 # background（porposes and reasons for creating this app）
 ・趣味でフィットネスに熱中しており、世間、特にビジネスマンにより浸透すれば良いと考えているため。<br>
-I'm into fitness as my hobby and I think that it's siginificant for people,especialy business people to exercise and manage their meal for their healthy body and mental.
+I'm into fitness as my hobby and I think that it's siginificant for people,especialy business people to exercise and manage their meals for their healthy body and mental.<br>
 ・周囲の人々から自分一人で運動や食事管理を続けることが難しいのでパーソナルトレーナーを利用することも考えたが、料金も高く、またどこで依頼すればいいかわからないという声を頻繁に聞いたため。<br>
-Some of my friends said to me that it's too dificult for them to make it habit to exercise and manage their meals on their own.So they once thought they wanted to hire their coaches,but it was too expensive and they didn't know where they shold find their coaches.<br>
+Some of my friends said to me that it's too dificult for them to make it habit to exercise and manage their meals on their own.So they once thought they wanted to hire their coaches,but it was too expensive and they didn't know where they should find their coaches.<br>
 ・パーソナルトレーナーとして活動を行う知人達から顧客獲得における費用・手間の負担が大きく苦労しているという話を聞いたため。<br> 
 Some of my friends who work as personal trainers said that they are in trouble with burdens of expense to continue their tasks and tremendous time to find their customers.<br>
 # points
 ・ログイン画面をuserとcoachの二種類を用意したこと。<br>
-I create screens of login for both of users and coaches.<br>
+Create screens of login for both of users and coaches.<br>
 ・それぞれがuserとcoachを検索し、選択できるようにしたこと。<br>
-This enable users and coaches to search and choose their business partners.<br>
+This app enable users and coaches to search and choose their business partners.<br>
 ・GoogleMapのAPIを用いてチャット画面から手軽に地図を開けるようにしたこと。<br>
-I installed Google Map API and they can use map from their chats easily.<br>
+Installed Google Map API and uesrs and coaches can easily use map from their chats' screen.<br>
 # future fanction
 ・ユーザーとコーチのマイページを実装・充実させる<br>
 Create user's and coach's "My Page".<br>
